@@ -1,0 +1,41 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+        "title": "Title",
+        "description": "Title",
+        "version": "1.0.0"
+    },
+    "tags": [
+        {
+            "name": "Products",
+            "description": "Home page with all products"
+        }
+    ],
+    "servers": [
+        {
+            "url": "http://localhost"
+        }
+    ],
+    "paths": {
+        "/": {
+                "get": {
+                    "tags": ["Products"],
+                    "summary": "Home page",
+                    "description": "",
+                    "parameters": [
+                        {
+                            "in": "header",
+                            "name": "body",
+                            "description": "Displaying home page"
+                        }
+                    ],
+                    "responses": {
+                        "200": {
+                            "description": "Successful"
+                        }
+                    }
+                }
+
+            }
+    }
+}

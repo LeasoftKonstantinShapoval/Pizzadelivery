@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>L`ora della</title>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="icon" href="img/icone.png">
+    <link rel="stylesheet" href="fonts/fonts.css">
+
+
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <div class="header__logo">
+                    <a href=""> <img width="40" src="./img/logo/logo.svg" alt="Pizza logo" />
+                        <h1>L`ora della</h1>
+                    </a>
+                </div>
+                <div class="menu-right justify-content-between d-flex">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Доставка та оплата</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Про нас</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-contact">
+                        <a href="tel:+380661389821">
+                            <span>+3 8(066)138-98-21</span>
+                        </a>
+                    </div>
+                    <div class="menu-user">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                            <img src="img/person.svg" href="">
+                        </button>
+                        <div class="modal" id="myModal">
+                            <div class="modal-dialog modal-sm modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <form action="/action_page.php">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <input type="text" name="username" placeholder="Username" required>
+                                                    <input type="password" name="password" placeholder="Password" required>
+                                                    <input type="submit" value="Увійти">
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div class="bottom-container">
+                                            <div class="row">
+                                                <div class="col-md">
+                                                    <a href="#" style="color:black" class="btn"><span>Ще не з нами?</span>Зарєеструватися</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <section class="home-menu">
+        <div class="container">
+            <!-- Swiper -->
+            <div class="swiper-menu">
+                <div class="swiper-wrapper">
+                    <a itemprop="url" data-nav="picca" href="#picca" class="swiper-slide active">Піца</a>
+                    <a itemprop="url" data-nav="napitki" href="#napitki" class="swiper-slide">Напої</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home-banner">
+        <div class="container">
+            <!-- Swiper -->
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/slider12.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/slider13.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/slider15.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev"> </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Контент -->
+    <div class="container mb-5">
+        <div class="row">
+            <!-- Товары -->
+            <div class="col-md-8">
+                <div class="row" id="products-container">
+                    <!-- // линк Пицца -->
+                    <div class="nts-products__title" id="picca" data-section="picca">Піца</div>
+                    <!-- // Товари -->
+                    <div class="col-md-6">
+                        <div class="card mb-4" data-id="01">
+                            <img class="product-img" src="img/pizza/4-syry.png" alt="">
+                            <div class="card-body text-center">
+                                <h4 class="item-title">4 Сири</h4>
+                                <p><small data-items-in-box class="text-muted">Основа, вершки, сир моцарелла,королівський сир, пармезан, сир дор блю</small></p>
+
+                                <div class="details-wrapper">
+                                    <div class="items counter-wrapper">
+                                        <div class="items__control" data-action="minus">-</div>
+                                        <div class="items__current" data-counter>1</div>
+                                        <div class="items__control" data-action="plus">+</div>
+                                    </div>
+
+                                    <div class="price">
+                                        <div class="price__weight">420 г.</div>
+                                        <div class="price__currency">201 ₴</div>
+                                    </div>
+                                </div>
+
+                                <button data-cart type="button" class="btn btn-block btn-outline-warning">+ в кошик</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4" data-id="02">
+                            <img class="product-img" src="img/pizza/kaprichoza-1.png" alt="">
+                            <div class="card-body text-center">
+                                <h4 class="item-title">Капрічоза</h4>
+                                <p><small data-items-in-box class="text-muted">Основа, томатний соус, сир моцарелла, гриби, салямі, шинка, помідори</small></p>
+
+                                <div class="details-wrapper">
+                                    <div class="items counter-wrapper">
+                                        <div class="items__control" data-action="minus">-</div>
+                                        <div class="items__current" data-counter>1</div>
+                                        <div class="items__control" data-action="plus">+</div>
+                                    </div>
+
+                                    <div class="price">
+                                        <div class="price__weight">550 г.</div>
+                                        <div class="price__currency">189 ₴</div>
+                                    </div>
+                                </div>
+
+                                <button data-cart type="button" class="btn btn-block btn-outline-warning">+ в кошик</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4" data-id="03">
+                            <img class="product-img" src="img/pizza/salyami-1.png" alt="">
+                            <div class="card-body text-center">
+                                <h4 class="item-title">Салямі</h4>
+                                <p><small data-items-in-box class="text-muted">Основа, томатний соус, сир моцарелла, салямі</small></p>
+
+                                <div class="details-wrapper">
+                                    <div class="items counter-wrapper">
+                                        <div class="items__control" data-action="minus">-</div>
+                                        <div class="items__current" data-counter>1</div>
+                                        <div class="items__control" data-action="plus">+</div>
+                                    </div>
+
+                                    <div class="price">
+                                        <div class="price__weight">400 г.</div>
+                                        <div class="price__currency">162 ₴</div>
+                                    </div>
+
+                                </div>
+
+                                <button data-cart type="button" class="btn btn-block btn-outline-warning">+ в кошик</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4" data-id="04">
+                            <img class="product-img" src="img/pizza/kozaczka.png" alt="">
+                            <div class="card-body text-center">
+                                <h4 class="item-title">Козацька</h4>
+                                <p><small data-items-in-box class="text-muted">Основа, томатний соус, сир моцарелла, салямі, шинка, мисливські, огірки, цибуля, чілі</small></p>
+
+                                <div class="details-wrapper">
+                                    <div class="items counter-wrapper">
+                                        <div class="items__control" data-action="minus">-</div>
+                                        <div class="items__current" data-counter>1</div>
+                                        <div class="items__control" data-action="plus">+</div>
+                                    </div>
+
+                                    <div class="price">
+                                        <div class="price__weight">545 г.</div>
+                                        <div class="price__currency">185 ₴</div>
+                                    </div>
+
+                                </div>
+
+                                <button data-cart type="button" class="btn btn-block btn-outline-warning">
+                                    + в кошик
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4" data-id="05">
+                            <img class="product-img" src="img/pizza/gavajska.png" alt="">
+                            <div class="card-body text-center">
+                                <h4 class="item-title">Гавайська</h4>
+                                <p><small data-items-in-box class="text-muted">Основа, вершки, сир моцарелла, куряче філе, кукурудза, ананаси, маслини</small></p>
+                                <div class="details-wrapper">
+                                    <div class="items counter-wrapper">
+                                        <div class="items__control" data-action="minus">-</div>
+                                        <div class="items__current" data-counter>1</div>
+                                        <div class="items__control" data-action="plus">+</div>
+                                    </div>
+
+                                    <div class="price">
+                                        <div class="price__weight">480 г.</div>
+                                        <div class="price__currency">199 ₴</div>
+                                    </div>
+
+                                </div>
+
+                                <button data-cart type="button" class="btn btn-block btn-outline-warning">
+                                    + в кошик
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4" data-id="06">
+                            <img class="product-img" src="img/pizza/tehaska.png" alt="">
+                            <div class="card-body text-center">
+                                <h4 class="item-title">Техас</h4>
+                                <p><small data-items-in-box class="text-muted">Основа, томатний соус, сир моцарелла, шинка, курка, помідори, солодкий чілі</small></p>
+
+                                <div class="details-wrapper">
+                                    <div class="items counter-wrapper">
+                                        <div class="items__control" data-action="minus">-</div>
+                                        <div class="items__current" data-counter>1</div>
+                                        <div class="items__control" data-action="plus">+</div>
+                                    </div>
+
+                                    <div class="price">
+                                        <div class="price__weight">490 г.</div>
+                                        <div class="price__currency">184 ₴</div>
+                                    </div>
+
+                                </div>
+
+                                <button data-cart type="button" class="btn btn-block btn-outline-warning">
+                                    + в кошик
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4" data-id="07">
+                            <img class="product-img" src="img/pizza/4-sezony.png" alt="">
+                            <div class="card-body text-center">
+                                <h4 class="item-title">4 Сезони</h4>
+                                <p><small data-items-in-box class="text-muted">Основа, томатний соус, сир моцарелла, папероні, гриби, кукурудза, шинка</small></p>
+
+                                <div class="details-wrapper">
+                                    <div class="items counter-wrapper">
+                                        <div class="items__control" data-action="minus">-</div>
+                                        <div class="items__current" data-counter>1</div>
+                                        <div class="items__control" data-action="plus">+</div>
+                                    </div>
+
+                                    <div class="price">
+                                        <div class="price__weight">500 г.</div>
+                                        <div class="price__currency">180 ₴</div>
+                                    </div>
+
+                                </div>
+
+                                <button data-cart type="button" class="btn btn-block btn-outline-warning">
+                                    + в кошик
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4" data-id="08">
+                            <img class="product-img" src="img/pizza/proshuto-fungi.png" alt="">
+                            <div class="card-body text-center">
+                                <h4 class="item-title">Прошуто Фунгі</h4>
+                                <p><small data-items-in-box class="text-muted">Основа, томатний соус, сир моцарелла, гриби, шинка</small></p>
+
+                                <div class="details-wrapper">
+                                    <div class="items counter-wrapper">
+                                        <div class="items__control" data-action="minus">-</div>
+                                        <div class="items__current" data-counter>1</div>
+                                        <div class="items__control" data-action="plus">+</div>
+                                    </div>
+
+                                    <div class="price">
+                                        <div class="price__weight">430 г.</div>
+                                        <div class="price__currency">163 ₴</div>
+                                    </div>
+
+                                </div>
+
+                                <button data-cart type="button" class="btn btn-block btn-outline-warning">
+                                    + в кошик
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nts-products__title" id="napitki" data-section="napitki">Напої</div>
+                    <div class="col-md-6">
+                        <div class="card mb-4" data-id="15">
+                            <img class="product-img" src="img/pizza/limonad.webp" alt="">
+                            <div class="card-body text-center">
+                                <h4 class="item-title">Лимонад</h4>
+                                <p><small data-items-in-box class="text-muted"></small></p>
+
+                                <div class="details-wrapper">
+                                    <div class="items counter-wrapper">
+                                        <div class="items__control" data-action="minus">-</div>
+                                        <div class="items__current" data-counter>1</div>
+                                        <div class="items__control" data-action="plus">+</div>
+                                    </div>
+
+                                    <div class="price">
+                                        <div class="price__weight">0,5 л</div>
+                                        <div class="price__currency">25 ₴</div>
+                                    </div>
+
+                                </div>
+
+                                <button data-cart type="button" class="btn btn-block btn-outline-warning">
+                                    + в кошик
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Корзина -->
+            <div class="col-md-4">
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Ваше замовлення</h5>
+
+                        <div data-cart-empty class="alert alert-secondary" role="alert">
+                            Кошик порожній
+                        </div>
+
+                        <!-- cart-wrapper -->
+                        <div class="cart-wrapper">
+
+                        </div>
+                        <!-- // cart-wrapper -->
+
+                        <!-- Стоимость заказа -->
+                        <div class="cart-total">
+                            <p data-cart-delivery class="none">
+                                <span class="h5">Доставка:</span>
+                                <span class="delivery-cost">50 ₴</span><br>
+                                <span class="small">Безкоштовна при замовленні від 399 ₴</span>
+                            </p>
+                            <p><span class="h5">Загальна сума:</span>
+                                <span class="total-price">0</span>
+                                <span class="rouble">₴</span>
+                            </p>
+                        </div>
+                        <!-- // Стоимость заказа -->
+
+                    </div>
+
+                    <!-- Оформить заказ -->
+                    <div id="order-form" class="card-body border-top none">
+                        <h5 class="card-title">Оформити замовлення</h5>
+                        <form>
+                            <button type="submit" class="btn btn-primary">Замовити</button>
+                        </form>
+                    </div>
+                    <!-- // Оформить заказ -->
+
+                </div>
+
+            </div>
+            <!-- // Корзина -->
+        </div>
+    </div>
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-left">
+                    <div class="phones">
+                        <div class="phone-item">
+                            <span>Для прийому замовлень:</span>
+                            <a href="tel:+380661234567">+380661234567</a>
+                            <a href="tel:+380939876545">+380939876545</a>
+                            <a href="tel:+380974567892">+380974567892</a>
+                        </div>
+                    </div>
+                    <div class="work-time">
+                        Графік роботи з буднів з 9:00 до 22:00
+                    </div>
+                    <div class="work-email">
+                        <a href="mailto:email.com">email.com</a>
+                    </div>
+                </div>
+                <div class="footer-center">
+                    <div class="social">
+                        <a href="">Ми у інстаграмм ></a>
+                        <a href="">Ми у фейсбуці ></a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="person">
+                        <a href=""><img src="img/person.png" alt=""><span>Увійти / Регістрація</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>©2022. L`ora della</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Подключаем скрипты -->
+
+    <script src="./js/renderProducts.js"></script>
+    <script src="./js/calcCartPrice.js"></script>
+    <script src="./js/toggleCartStatus.js"></script>
+    <script src="./js/counter-02.js"></script>
+    <script src="./js/cart-02.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
