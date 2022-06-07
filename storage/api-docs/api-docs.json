@@ -1,0 +1,54 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "OpenApi Documentation",
+        "description": "Документация для микро сервиса",
+        "contact": {
+            "email": "hello@example.com"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost",
+            "description": "Основной API"
+        },
+        {
+            "url": "http://localhost",
+            "description": "Для Логирования"
+        }
+    ],
+    "paths": {
+        "/": {
+            "get": {
+                "tags": [
+                    "Products"
+                ],
+                "summary": "Display a listing of the resource",
+                "operationId": "productsAll",
+                "responses": {
+                    "200": {
+                        "description": "Everything is fine"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Products": {
+                "title": "Products",
+                "description": "Products model",
+                "xml": {
+                    "name": "Products"
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Diplom",
+            "description": "Дипломная работа"
+        }
+    ]
+}
